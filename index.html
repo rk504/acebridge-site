@@ -1,22 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Ace Bridge</title>
-    <!-- Add any CSS links or favicons you need here -->
+    <title>Ace Bridge – Learn & Level Up</title>
+
+    <!-- Tailwind (via CDN for quick drop-in) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon / OG tags (optional) -->
+    <link rel="icon" href="/public/favicon.ico" />
   </head>
 
-  <body>
-    <!-- Your real page content starts here -->
-    <h1>Welcome to Ace Bridge</h1>
-    <p>This page no longer redirects to Replit.</p>
+  <body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- ░░ NAV ░░ -->
+    <header
+      class="sticky top-0 z-20 bg-white/70 backdrop-blur shadow-sm border-b border-gray-200"
+    >
+      <div class="mx-auto max-w-6xl flex items-center justify-between p-4">
+        <a href="#home" class="font-bold text-xl text-indigo-600">Ace Bridge</a>
 
-    <!-- If this is a React/Next static export, leave a root div: -->
-    <!-- <div id="__next"></div> -->
-    <script src="main.js"></script> <!-- remove if not using -->
+        <nav class="space-x-6 text-sm font-medium">
+          <a href="#team" class="hover:text-indigo-600">Team</a>
+          <a href="#testimonials" class="hover:text-indigo-600">Testimonials</a>
+          <a
+            href="#contact"
+            class="inline-block rounded bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700"
+            >Book a Demo</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- ░░ HERO ░░ -->
+    <section
+      id="home"
+      class="min-h-[70vh] flex flex-col items-center justify-center text-center bg-gradient-to-br from-indigo-50 to-white px-4"
+    >
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
+        Learn Bridge — Faster, Deeper, Together
+      </h1>
+      <p class="max-w-xl text-lg md:text-xl mb-8 text-gray-600">
+        Ace Bridge pairs elite instructors with proven learning frameworks so
+        students level-up in weeks, not months.
+      </p>
+      <a
+        href="#contact"
+        class="mt-2 rounded bg-indigo-600 px-8 py-3 text-white text-lg font-semibold shadow-lg hover:bg-indigo-700"
+        >Schedule a Free Lesson</a
+      >
+    </section>
+
+    <!-- ░░ TEAM ░░ -->
+    <section id="team" class="py-20 bg-white">
+      <div class="mx-auto max-w-5xl px-4">
+        <h2 class="text-3xl font-bold mb-10 text-center">Meet the Team</h2>
+
+        <div
+          class="grid gap-8 md:grid-cols-3 [&_img]:rounded-full [&_img]:w-28 [&_img]:h-28 [&_img]:object-cover"
+        >
+          <!-- Card -->
+          <div class="text-center">
+            <img src="/public/team/reese.jpg" alt="Reese Koppel" />
+            <h3 class="mt-4 font-semibold text-lg">Reese Koppel</h3>
+            <p class="text-sm text-gray-600">
+              Founder. National-ranked bridge player &amp; data-driven coach.
+            </p>
+          </div>
+
+          <!-- Repeat cards or map over data later -->
+          <div class="text-center">
+            <img src="/public/team/instructor1.jpg" alt="Instructor 1" />
+            <h3 class="mt-4 font-semibold text-lg">Alex Nguyen</h3>
+            <p class="text-sm text-gray-600">
+              Lessons that turn bidding theory into muscle memory.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <img src="/public/team/instructor2.jpg" alt="Instructor 2" />
+            <h3 class="mt-4 font-semibold text-lg">Priya Singh</h3>
+            <p class="text-sm text-gray-600">
+              Specializes in declarer-play tactics for competitive youth pairs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ TESTIMONIALS ░░ -->
+    <section
+      id="testimonials"
+      class="py-20 bg-indigo-50/60 border-y border-indigo-100"
+    >
+      <div class="mx-auto max-w-4xl px-4">
+        <h2 class="text-3xl font-bold mb-10 text-center">Student Voices</h2>
+
+        <div
+          class="space-y-10 [&_blockquote]:italic [&_blockquote]:text-gray-700"
+        >
+          <!-- Testimonial -->
+          <figure class="relative bg-white p-6 rounded-lg shadow">
+            <blockquote>
+              “After four sessions I was already playing in local duplicate
+              tournaments — and winning! The drills made everything click.”
+            </blockquote>
+            <figcaption class="mt-4 text-sm font-medium text-gray-600">
+              — Jamie L., college sophomore
+            </figcaption>
+          </figure>
+
+          <figure class="relative bg-white p-6 rounded-lg shadow">
+            <blockquote>
+              “Ace Bridge’s lesson plans are a master-class in teaching. My son
+              jumped two bidding levels in one month.”
+            </blockquote>
+            <figcaption class="mt-4 text-sm font-medium text-gray-600">
+              — Priyanka M., parent
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ CONTACT ░░ -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="mx-auto max-w-3xl px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">
+          Ready to Start Playing?
+        </h2>
+
+        <form
+          action="https://formspree.io/f/{{YOUR_FORM_ID}}"
+          method="POST"
+          class="space-y-6"
+        >
+          <div class="flex flex-col md:flex-row gap-6">
+            <input
+              required
+              type="text"
+              name="name"
+              placeholder="Full name"
+              class="flex-1 rounded border border-gray-300 p-3 focus:ring-indigo-600"
+            />
+            <input
+              required
+              type="email"
+              name="email"
+              placeholder="Email address"
+              class="flex-1 rounded border border-gray-300 p-3 focus:ring-indigo-600"
+            />
+          </div>
+
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Tell us your bridge goals…"
+            class="w-full rounded border border-gray-300 p-3 focus:ring-indigo-600"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="w-full md:w-auto rounded bg-indigo-600 px-8 py-3 text-white font-semibold hover:bg-indigo-700"
+          >
+            Send &nbsp;→
+          </button>
+        </form>
+
+        <p class="mt-6 text-center text-sm text-gray-500">
+          Prefer email? Reach us at
+          <a
+            href="mailto:lessons@acebridge.com"
+            class="underline hover:text-indigo-600"
+            >reese@acebridge.org</a
+          >.
+        </p>
+      </div>
+    </section>
+
+    <!-- ░░ FOOTER ░░ -->
+    <footer class="py-8 text-center text-sm text-gray-500">
+      © 2025 Ace Bridge LLC. All rights reserved.
+    </footer>
   </body>
 </html>
