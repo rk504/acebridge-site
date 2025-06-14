@@ -1,17 +1,8 @@
 /** @type {import('next').NextConfig} */
-module.exports = { output: 'export' };
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
-  reactStrictMode: true,
-  swcMinify: false
-}
+  output: 'export',     // tells Next to emit /out for static hosting
+};
+
+module.exports = nextConfig;
 
 export default nextConfig
