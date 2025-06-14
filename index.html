@@ -6,184 +6,263 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Ace Bridge – Learn & Level Up</title>
+    <title>Ace Bridge – Learn Bridge by Playing</title>
 
-    <!-- Tailwind (via CDN for quick drop-in) -->
+    <!-- Tailwind (via CDN for quick deploy) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Favicon / OG tags (optional) -->
+    <!-- Optional favicon -->
     <link rel="icon" href="/public/favicon.ico" />
   </head>
 
-  <body class="bg-gray-50 text-gray-800 antialiased">
-    <!-- ░░ NAV ░░ -->
-    <header
-      class="sticky top-0 z-20 bg-white/70 backdrop-blur shadow-sm border-b border-gray-200"
-    >
-      <div class="mx-auto max-w-6xl flex items-center justify-between p-4">
-        <a href="#home" class="font-bold text-xl text-indigo-600">Ace Bridge</a>
+  <body class="antialiased text-gray-800 bg-gray-50">
+    <!-- ░░ HEADER ░░ -->
+    <header class="w-full">
+      <!-- Top bar -->
+      <div class="bg-[#3b5998] text-white p-4">
+        <div
+          class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <div class="flex items-center gap-4">
+            <img
+              src="/public/images/logo.png"
+              alt="Ace Bridge Logo"
+              class="w-24 h-24 object-contain"
+            />
+            <div>
+              <h1 class="text-2xl md:text-3xl font-bold">
+                Learn by Playing with Ace Bridge
+              </h1>
+              <p class="text-sm md:text-base">
+                Try a Free, No-Commitment Demo Lesson
+              </p>
+              <p class="text-sm">
+                Email:
+                <a href="mailto:reese@acebridge.org" class="underline"
+                  >reese@acebridge.org</a
+                >
+              </p>
+            </div>
+          </div>
 
-        <nav class="space-x-6 text-sm font-medium">
-          <a href="#team" class="hover:text-indigo-600">Team</a>
-          <a href="#testimonials" class="hover:text-indigo-600">Testimonials</a>
-          <a
-            href="#contact"
-            class="inline-block rounded bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700"
-            >Book a Demo</a
-          >
-        </nav>
+          <!-- Social icons -->
+          <div class="flex gap-4">
+            <a
+              href="https://www.youtube.com/@acebridge1770"
+              target="_blank"
+              aria-label="YouTube"
+              class="hover:text-yellow-400"
+            >
+              <!-- YouTube icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.5 17a24.1 24.1 0 010-10A2 2 0 014 5.6a49.6 49.6 0 0116.2 0A2 2 0 0121.5 7a24.1 24.1 0 010 10 2 2 0 01-1.3 1.4 49.6 49.6 0 01-16.2 0A2 2 0 012.5 17z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m10 15 5-3-5-3"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/ace-bridge/"
+              target="_blank"
+              aria-label="LinkedIn"
+              class="hover:text-yellow-400"
+            >
+              <!-- LinkedIn icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"
+                />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a
+              href="mailto:reese@acebridge.org"
+              aria-label="Email"
+              class="hover:text-yellow-400"
+            >
+              <!-- Mail icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-10 6L2 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <!-- Nav -->
+      <nav class="bg-gray-100 border-b">
+        <div class="container mx-auto">
+          <ul
+            class="flex flex-wrap justify-center md:justify-start text-sm md:text-base"
+          >
+            <li>
+              <a href="/" class="block px-4 py-2 hover:bg-gray-200">Home</a>
+            </li>
+            <li>
+              <a href="/team" class="block px-4 py-2 hover:bg-gray-200"
+                >Meet the Team</a
+              >
+            </li>
+            <li>
+              <a href="/testimonials" class="block px-4 py-2 hover:bg-gray-200"
+                >Student Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="/tutorial-video"
+                class="block px-4 py-2 hover:bg-gray-200"
+                >Tutorial Video – Negative Doubles</a
+              >
+            </li>
+            <li>
+              <a href="/contact" class="block px-4 py-2 hover:bg-gray-200"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <!-- ░░ HERO ░░ -->
-    <section
-      id="home"
-      class="min-h-[70vh] flex flex-col items-center justify-center text-center bg-gradient-to-br from-indigo-50 to-white px-4"
-    >
-      <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
-        Learn Bridge — Faster, Deeper, Together
-      </h1>
-      <p class="max-w-xl text-lg md:text-xl mb-8 text-gray-600">
-        Ace Bridge pairs elite instructors with proven learning frameworks so
-        students level-up in weeks, not months.
-      </p>
-      <a
-        href="#contact"
-        class="mt-2 rounded bg-indigo-600 px-8 py-3 text-white text-lg font-semibold shadow-lg hover:bg-indigo-700"
-        >Schedule a Free Lesson</a
+    <section class="relative bg-[#3b5998] text-white">
+      <div
+        class="container mx-auto py-12 px-4 md:py-24 flex flex-col md:flex-row items-center"
       >
-    </section>
+        <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            At Ace Bridge, you’ll sharpen your bridge skills while having fun.
+          </h2>
+          <p class="text-xl md:text-2xl mb-8">
+            Gain confidence the Ace Bridge Way: Less Lectures, More Playing
+            Bridge.
+          </p>
+        </div>
 
-    <!-- ░░ TEAM ░░ -->
-    <section id="team" class="py-20 bg-white">
-      <div class="mx-auto max-w-5xl px-4">
-        <h2 class="text-3xl font-bold mb-10 text-center">Meet the Team</h2>
-
-        <div
-          class="grid gap-8 md:grid-cols-3 [&_img]:rounded-full [&_img]:w-28 [&_img]:h-28 [&_img]:object-cover"
-        >
-          <!-- Card -->
-          <div class="text-center">
-            <img src="/public/team/reese.jpg" alt="Reese Koppel" />
-            <h3 class="mt-4 font-semibold text-lg">Reese Koppel</h3>
-            <p class="text-sm text-gray-600">
-              Founder. National-ranked bridge player &amp; data-driven coach.
-            </p>
-          </div>
-
-          <!-- Repeat cards or map over data later -->
-          <div class="text-center">
-            <img src="/public/team/instructor1.jpg" alt="Instructor 1" />
-            <h3 class="mt-4 font-semibold text-lg">Alex Nguyen</h3>
-            <p class="text-sm text-gray-600">
-              Lessons that turn bidding theory into muscle memory.
-            </p>
-          </div>
-
-          <div class="text-center">
-            <img src="/public/team/instructor2.jpg" alt="Instructor 2" />
-            <h3 class="mt-4 font-semibold text-lg">Priya Singh</h3>
-            <p class="text-sm text-gray-600">
-              Specializes in declarer-play tactics for competitive youth pairs.
-            </p>
+        <div class="md:w-1/2">
+          <div class="relative w-full h-[300px] md:h-[400px]">
+            <img
+              src="/public/images/playing-cards.png"
+              alt="Bridge playing cards"
+              class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ░░ TESTIMONIALS ░░ -->
-    <section
-      id="testimonials"
-      class="py-20 bg-indigo-50/60 border-y border-indigo-100"
-    >
-      <div class="mx-auto max-w-4xl px-4">
-        <h2 class="text-3xl font-bold mb-10 text-center">Student Voices</h2>
-
+    <!-- ░░ FREE DEMO CARD ░░ -->
+    <section class="py-12 px-4 bg-gray-50">
+      <div class="container mx-auto max-w-md">
         <div
-          class="space-y-10 [&_blockquote]:italic [&_blockquote]:text-gray-700"
+          class="rounded-lg border bg-white shadow-sm overflow-hidden text-center"
         >
-          <!-- Testimonial -->
-          <figure class="relative bg-white p-6 rounded-lg shadow">
-            <blockquote>
-              “After four sessions I was already playing in local duplicate
-              tournaments — and winning! The drills made everything click.”
-            </blockquote>
-            <figcaption class="mt-4 text-sm font-medium text-gray-600">
-              — Jamie L., college sophomore
-            </figcaption>
-          </figure>
+          <div class="p-6 space-y-2">
+            <h3 class="text-2xl font-semibold">Free Demo Lesson</h3>
+            <p class="text-gray-600">
+              Interested in a complimentary first lesson? Contact us directly!
+            </p>
+          </div>
 
-          <figure class="relative bg-white p-6 rounded-lg shadow">
-            <blockquote>
-              “Ace Bridge’s lesson plans are a master-class in teaching. My son
-              jumped two bidding levels in one month.”
-            </blockquote>
-            <figcaption class="mt-4 text-sm font-medium text-gray-600">
-              — Priyanka M., parent
-            </figcaption>
-          </figure>
+          <div class="p-6">
+            <p class="mb-6">
+              Click below to email Reese and schedule your free demo lesson.
+              Please include a time that works best for you.
+            </p>
+            <a
+              href="mailto:reese@acebridge.org?subject=Free%20Demo%20Lesson%20Request&body=Hi%20Reese,%0A%0AI'd%20like%20to%20schedule%20a%20free%20demo%20lesson.%20Times%20that%20work%20for%20me:%0A%0A[Your%20availability]%0A%0AThank%20you!"
+              class="inline-block bg-[#3b5998] hover:bg-[#2d4373] text-white px-6 py-3 rounded-md text-lg font-medium"
+              >Email reese@acebridge.org</a
+            >
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ░░ CONTACT ░░ -->
-    <section id="contact" class="py-20 bg-white">
-      <div class="mx-auto max-w-3xl px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">
-          Ready to Start Playing?
+    <!-- ░░ SECOND CTA ░░ -->
+    <section class="py-16 px-4 bg-[#3b5998] text-white text-center">
+      <div class="container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Want a Complimentary Introductory Lesson?
         </h2>
-
-        <form
-          action="https://formspree.io/f/{{YOUR_FORM_ID}}"
-          method="POST"
-          class="space-y-6"
-        >
-          <div class="flex flex-col md:flex-row gap-6">
-            <input
-              required
-              type="text"
-              name="name"
-              placeholder="Full name"
-              class="flex-1 rounded border border-gray-300 p-3 focus:ring-indigo-600"
-            />
-            <input
-              required
-              type="email"
-              name="email"
-              placeholder="Email address"
-              class="flex-1 rounded border border-gray-300 p-3 focus:ring-indigo-600"
-            />
-          </div>
-
-          <textarea
-            name="message"
-            rows="4"
-            placeholder="Tell us your bridge goals…"
-            class="w-full rounded border border-gray-300 p-3 focus:ring-indigo-600"
-          ></textarea>
-
-          <button
-            type="submit"
-            class="w-full md:w-auto rounded bg-indigo-600 px-8 py-3 text-white font-semibold hover:bg-indigo-700"
-          >
-            Send &nbsp;→
-          </button>
-        </form>
-
-        <p class="mt-6 text-center text-sm text-gray-500">
-          Prefer email? Reach us at
-          <a
-            href="mailto:lessons@acebridge.com"
-            class="underline hover:text-indigo-600"
-            >reese@acebridge.org</a
-          >.
+        <p class="text-xl max-w-2xl mx-auto mb-8">
+          Share your email below to learn more about lessons with Ace Bridge.
         </p>
+        <a
+          href="mailto:reese@acebridge.org?subject=Free%20Demo%20Lesson%20Request&body=Hi%20Reese,%0A%0AI'd%20like%20to%20schedule%20a%20free%20demo%20lesson.%0A%0AThank%20you!"
+          class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-md text-lg font-semibold"
+          >Email reese@acebridge.org</a
+        >
       </div>
     </section>
 
     <!-- ░░ FOOTER ░░ -->
-    <footer class="py-8 text-center text-sm text-gray-500">
-      © 2025 Ace Bridge LLC. All rights reserved.
-    </footer>
-  </body>
-</html>
+    <footer class="bg-gray-800 text-white py-8 px-4">
+      <div class="container mx-auto">
+        <div class="grid gap-8 md:grid-cols-3">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Ace Bridge</h3>
+            <p class="mb-4">
+              Learn to play bridge confidently with less lectures and more
+              playing.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.youtube.com/@acebridge1770"
+                target="_blank"
+                aria-label="YouTube"
+                class="hover:text-yellow-400"
+                ><!-- reuse YouTube icon -->&#x1F4FA;</a
+              >
+              <a
+                href="https://www.linkedin.com/company/ace-bridge/"
+                target="_blank"
+                aria-label="LinkedIn"
+                class="hover:text-yellow-400"
+                >in</a
+              >
+              <a
+                href="mailto:reese@acebridge.org"
+                aria-label="Email"
+                class="hover:text-yellow-400"
+                >@</a
+              >
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="/" class="hover:underline">Home</a
